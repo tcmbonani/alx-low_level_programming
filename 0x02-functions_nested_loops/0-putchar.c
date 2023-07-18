@@ -1,7 +1,7 @@
-#include <main.h>
+#include "main.h"
 
 /**
- *  main - prints all possible combinations of two-digit numbers
+ *  main - Entry point of my code,
  *
  *  Return: Always 0 
  */
