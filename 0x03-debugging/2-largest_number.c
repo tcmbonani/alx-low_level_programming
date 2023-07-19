@@ -24,11 +24,10 @@ else if (c > b)
 {
 largest = c;
 }
-else 
+else
 {
 largest = b;
 }
-
 return (largest);
 }    
 
