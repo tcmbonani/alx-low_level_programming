@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - Prints the sim of all multiples of 3 or 5 up to 1024 
-* 
+* main - Prints the sim of all multiples of 3 or 5 up to 1024
+*
 * Return: Always (Success)
 */
 
@@ -19,5 +19,5 @@ z += i;
 i++;
 }
 printf("%d\n", z);
-return (0); 
+return (0);
 }
