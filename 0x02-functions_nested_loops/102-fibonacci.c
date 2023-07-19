@@ -9,7 +9,6 @@
 int main(void)
 {
 int i = 0;
-int l = 1;
 long j = l, k = 2;
 
 while (i < 50)
