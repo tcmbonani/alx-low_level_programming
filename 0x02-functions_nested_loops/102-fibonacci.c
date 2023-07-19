@@ -9,6 +9,7 @@
 int main(void)
 {
 int i = 0;
+int l = 1;
 long j = l, k = 2;
 
 while (i < 50)
@@ -24,6 +25,7 @@ j = k - j;
 printf(", %ld", k);
 }
 ++l;
+}
 printf("\n");
 return (0);
 
