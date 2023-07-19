@@ -9,12 +9,13 @@
 int main(void)
 {
 int i = 0;
+int l = 0;
 long j = l, k = 2;
 
 while (i < 50)
 {
 if (i == 0)
-printf("%d", j);
+printf("%ld", j);
 else if (i == l)
 printf(", %ld", k);
 }
