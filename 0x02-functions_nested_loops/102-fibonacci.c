@@ -18,8 +18,8 @@ printf("%d", j);
 else if (i == l)
 printf(", %ld", k);
 }
-++1;
-print("\n");
+++l;
+printf("\n");
 return (0);
 
 }
