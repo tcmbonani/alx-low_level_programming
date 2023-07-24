@@ -27,5 +27,5 @@ if (o % 2 == 0)
 _putchar(str[o]);
 }
 }
--putchar('\n');
+_putchar('\n');
 }
