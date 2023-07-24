@@ -11,7 +11,7 @@
 
 int main(void)
 {
-int putchar(int char);
+int putchar(char c);
 int pass[100];
 int i, sum, n;
 
