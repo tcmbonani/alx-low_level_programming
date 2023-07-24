@@ -1,4 +1,5 @@
 #include <time.h>
+#include "main.h"
 
 /**
 * main - program that generates random valid
