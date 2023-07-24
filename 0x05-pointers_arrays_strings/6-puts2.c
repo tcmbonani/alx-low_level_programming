@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* puts2 - function should print only one chararcter out 
+* puts2 - function should print only one chararcter out of two
 * starting with the first one
 * @str: input
 * Return: print
@@ -20,6 +20,7 @@ y++;
 longi++;
 }
 t = longi - 1;
+
 for (o = 0; o <= t ;o++)
 {
 if (o % 2 == 0)
