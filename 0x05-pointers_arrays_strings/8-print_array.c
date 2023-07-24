@@ -1,25 +1,35 @@
+#include <time.h>
 #include "main.h"
 
 /**
-* char *_strcpy - a function that copies the string pointed to by scr
-* @dest: copy to
-* @src: copy from
-* Return: string
+* main - program that generates random valid
+* password for the program 101 - crackme
+*
+* Return: Always 0 (Success)
 */
 
-char *_strcpy(char *dest, char *src)
+int main(void)
 {
-int l = 0;
-int x = 0;
+int pass[100];
+int i, sum, n;
 
-while (*(src + l) != '\0')
+sum = 0;
+
+srand(time(NULL));
+
+for (i = 0; i < 100; i++)
 {
-l++;
-}
-for ( ; x < l ; x++)
+pass[i] = rand() % 78;
+sum += (pass[i] + '0');
+putchar(pass[i] + '0');
+if ((2772 - sum) - '0' < 78)
 {
-dest[x] = src[x];
+n = 2772 - sum - '0';
+sum += n;
+putchar(n + '0');
+break;
 }
-dest[l] = '\0';
-return (dest);
 }
+return (0);
+}
+
