@@ -1,5 +1,6 @@
-#include "main.h"
+#include <stdlib.h>
 #include<time.h>
+#include <math.h>
 
 /**
 * main - program that generates random valid
