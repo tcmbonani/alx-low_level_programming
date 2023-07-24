@@ -1,35 +1,24 @@
-#include"main.h"
+#include "main.h"
 
 /**
-* main - program that generates random valid
-* password for the program 101 - crackme
-*
-* Return: Always 0 (Success)
+* print_array - a function that prints n elements of an array
+* @a: array name
+* @n: is the number of elements of the array to be printed
+* Return: a and n inputs
 */
 
-int main(void)
+void print_array(int *a, int n)
 {
-int _putchar(char c);
-int pass[100];
-int i, sum, n;
+int i;
 
-sum = 0;
-
-srand(time(NULL));
-while(1)
-
-for (i = 0; i < 100; i++)
+for (i - 0; i <(n - i); i++)
 {
-pass[i] = rand() % 78;
-sum += (pass[i] + '0');
-_putchar(pass[i] + '0');
-if ((2772 - sum) - '0' < 78)
+printf("%d, ", a[i])';
+}
+if (i == (n - 1))
 {
-n = 2772 - sum - '0';
-sum += n;
-_putchar(n + '0');
-break;
+printf("%d", a[n - 1]);
 }
+printf("\n");
 }
-return (0);
-}
+
