@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
 * main - program that convert a string to an integer
 *
@@ -5,7 +7,7 @@
 */
 
 
-int _atoi(char *s)
+int atoi(const char *nptr)
 {
 int i = 1;
 unsigned int num = 0;
