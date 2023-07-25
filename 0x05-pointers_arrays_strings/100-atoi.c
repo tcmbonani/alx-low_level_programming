@@ -2,7 +2,7 @@
 
 /**
 * main - program that convert a string to an integer
-* 
+*
 * Return: the int converted from the string
 */
 
@@ -17,7 +17,6 @@ else if (*s >= '0' && *s <= '9')
 num = num * 10 + (*s - '0');
 else if (num > 0)
 break;
-}
-while (*s++);
+}while (*s++);
 return (num *i);
 }
