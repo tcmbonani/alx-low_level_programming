@@ -1,13 +1,14 @@
 #include <stdlib.h>
 
 /**
-* main - program that convert a string to an integer
+* _atoi - changes a string to an int
+* @s: the string to be changed
 *
-* Return: the int converted from the string
+* Return: the converted int
 */
 
 
-int atoi(const char *nptr)
+int _atoi(char *s)
 {
 int i = 1;
 unsigned int num = 0;
