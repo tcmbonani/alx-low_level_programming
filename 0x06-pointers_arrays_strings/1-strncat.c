@@ -2,14 +2,14 @@
 
 /**
 * _strcat - concatenates two strings
-*using at most n bytes from src
+* using at most n bytes from src
 * @dest: input value
 * @src: input value
 * @n: input value
 * Return: void
 */
 
-char *_strcat(char *dest, char *src, int n)
+char _strcat(char *dest, char *src, int n)
 {
 int i;
 int j;
