@@ -1,5 +1,5 @@
 #include "main.h"
- #include <string.h>
+#include <string.h>
 
 /**
 * _strncat - concatenates two strings
@@ -27,6 +27,6 @@ dest[i] = src[j];
 i++;
 j++;
 }
-dest[i] = '\0' ;
-return (dest); 
+dest[i] = '\0';
+return (dest);
 }
