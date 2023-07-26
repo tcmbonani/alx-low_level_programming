@@ -8,7 +8,7 @@
 
 char *cap_string(char *str)
 {
-int index = ;
+int index = 0;
 
 while (str[index])
 {
