@@ -6,7 +6,7 @@
 * Return: n
 */
 
-void *string_toupper(char *n)
+void string_toupper(char *n)
 {
 int i;
 
