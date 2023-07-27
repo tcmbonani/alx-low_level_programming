@@ -1,5 +1,4 @@
 #include "main.h"
- #include <unistd.h>
 
 /**
 * print_number - print numbers chars
@@ -14,7 +13,7 @@ unsigned int n1;
 n1 = n;
 if (n < 0)
 {
-putchar('-');
+_putchar('-');
 n1 = -n;
 }
 if (n1 / 10 != 0)
