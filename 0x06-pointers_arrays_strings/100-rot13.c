@@ -6,25 +6,22 @@
 * Return: encoded string
 */
 
-char *rot13(char *s)
 {
 int i;
+int j;
+char data1[] = "ABCDEFGHIJKLMNOPQSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLnopqrstuvwxyzabcdefghijklm";
 
-char rot13[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZAbcdefghijklmnopqrstuvwxyz";
-char ROT13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-char *ptr = s;
-
-while (*s)
+for (i = 0; s[i] != '\0'; i++)
 {
-for (i = 0; i < 52; i++)
+for (j = 0; j < 52; j++)
 {
-if (*s == rot13[i])
+if (s[i] == data1[j])
 {
-*s = ROT13[i];
+s[i] = datarot[j];
 break;
 }
 }
-s++;
 }
-return (ptr);
+return (s);
 }
