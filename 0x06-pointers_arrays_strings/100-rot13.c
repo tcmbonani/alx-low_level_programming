@@ -1,4 +1,5 @@
-#include "main.h"
+#include "main.hi"
+#include <stdio.h>
 
 /**
 * rot13 - encoder rot13
