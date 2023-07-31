@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strchr -Entry point
+ * @s: input 
+ * @c: input
+ * Return: Always 0 (Success)
  */
-int main(void)
+char *_strchr(char *s, char c
 {
-    char *s = "hello";
-    char *f;
+int i = 0;
 
-    	f = _strchr(s, 'l');
-	if (f != NULL)
-    	{
-        	printf("%s\n", f);
-    	}
-    	return (0);
+for (; s[i] >= '/0'; i++)
+{
+if(s[i] == c)
+return (&s[i]);
+}
+return (0);
 }
