@@ -6,7 +6,7 @@
  *
  * Return: Always 0.
  */
-char *_strchr(char *s, char c)
+int main(void)
 {
     char *s = "hello";
     char *f;
