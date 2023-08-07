@@ -1,25 +1,26 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * create_array - create an array of and initialize it with a specific value
+ * @size: the desired size of the array
+ * @c: the value with which the array should be initialized
  *
- * Return: Nothing.
+ * Return: NULL if size is 0 or memory allocation fails,
+ * otherwise 0
  */
 char *create_array(unsigned int size, char c)
 {
-  unsigned int i;
+	char *array;
 
-  if (size == 0)
-      return (NULL);
+	if (!size)
+		return (NULL);
 
-  char *s = (char*)malloc(size * sizeof(char));
+	array = (char *) malloc(sizeof(char) * size);
 
-  for (i = 0; i < size; i++)
-    s[i] = c;
-
-  return (s);
+	if (array)
+	{
+		while (size > 0)
+			array[--size] = c;
+	}
+	return (array);
 }
